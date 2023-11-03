@@ -147,3 +147,9 @@ VALUES
 Set the column Price data type to Decimal with 2 decimal points.*/
 ALTER TABLE Item
 ADD item_price DECIMAL (10,2);
+
+/*Update the state of hero 1 to inactive.
+Delete the item associated with hero 1.*/
+UPDATE Hero
+SET is_active = 'false'
+WHERE hero_id = 1;
