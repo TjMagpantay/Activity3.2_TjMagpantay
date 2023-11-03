@@ -163,3 +163,14 @@ FROM Player p
 JOIN Hero h ON p.hero_id = h.hero_id
 WHERE h.is_active = 'true';
 
+--Provide a list of heroes classified as archers.
+SELECT hero_name, Class.class_name FROM Class
+JOIN Class ON hero.class_id = Class.class_id
+WHERE Class.class_name LIKE '%Archer%';
+
+
+
+
+
+
+
